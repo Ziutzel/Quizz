@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,32 +13,101 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="QUIZZ" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="degradado" translatesAutoresizingMaskIntoConstraints="NO" id="Zca-OO-rey">
-                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="S3G-7t-c84" userLabel="Vertical">
+                                <rect key="frame" x="10" y="44" width="394" height="852"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PUNTAJE : 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Xz-Rc-AWv">
+                                        <rect key="frame" x="0.0" y="0.0" width="394" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="pJJ-bz-Hmy"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.1098225846" green="0.80987197160000002" blue="0.66443110230000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aluminio" translatesAutoresizingMaskIntoConstraints="NO" id="OOm-Tz-WAC">
+                                        <rect key="frame" x="0.0" y="60" width="394" height="180"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="180" id="g54-MY-K4a"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Los mayas fueron la primera civilización de america" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mSO-Og-TiQ">
+                                        <rect key="frame" x="0.0" y="250" width="394" height="180"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="180" id="rLr-pr-e1d"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="59l-UW-fPr">
+                                        <rect key="frame" x="0.0" y="440" width="394" height="50"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="TH7-jk-Hhz"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K7d-oE-3wL">
+                                        <rect key="frame" x="0.0" y="500" width="394" height="50"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="vMG-cn-cu5"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                    </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qSn-lF-pbQ">
+                                        <rect key="frame" x="0.0" y="560" width="394" height="28.333333333333371"/>
+                                    </view>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="rvB-eU-j8q">
+                                        <rect key="frame" x="0.0" y="598.33333333333337" width="394" height="10"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="10" id="Eqo-F7-LAh"/>
+                                        </constraints>
+                                        <color key="progressTintColor" systemColor="systemYellowColor"/>
+                                        <color key="trackTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </progressView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fBK-pd-NjH">
+                                        <rect key="frame" x="0.0" y="618.33333333333337" width="394" height="233.66666666666663"/>
+                                    </view>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Zca-OO-rey" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="9WH-Pz-546"/>
                             <constraint firstItem="Zca-OO-rey" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="F46-Vn-Ten"/>
+                            <constraint firstItem="S3G-7t-c84" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="NPR-RU-vcl"/>
                             <constraint firstItem="Zca-OO-rey" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="UDp-DC-eVn"/>
+                            <constraint firstItem="S3G-7t-c84" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="XQu-k5-1I0"/>
                             <constraint firstAttribute="bottom" secondItem="Zca-OO-rey" secondAttribute="bottom" id="Xnl-YS-5Aw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="S3G-7t-c84" secondAttribute="trailing" constant="10" id="YlC-v4-zbJ"/>
+                            <constraint firstAttribute="bottom" secondItem="S3G-7t-c84" secondAttribute="bottom" id="ov9-NR-6zM"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="130.76923076923077" y="-28.436018957345969"/>
+            <point key="canvasLocation" x="130.43478260869566" y="-28.794642857142854"/>
         </scene>
     </scenes>
     <resources>
+        <image name="aluminio" width="1200" height="890"/>
         <image name="degradado" width="750" height="1331"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
